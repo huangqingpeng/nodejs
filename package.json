@@ -1,0 +1,22 @@
+{
+  "name": "nodejs",
+  "version": "1.0.0",
+  "description": "",
+  "main": "helloworld.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/huangqingpeng/nodejs.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/huangqingpeng/nodejs/issues"
+  },
+  "homepage": "https://github.com/huangqingpeng/nodejs#readme",
+  "devDependencies": {
+    "mysql": "^2.16.0"
+  }
+}
