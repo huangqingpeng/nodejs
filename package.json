@@ -17,6 +17,7 @@
   },
   "homepage": "https://github.com/huangqingpeng/nodejs#readme",
   "devDependencies": {
+    "async": "^2.6.2",
     "mysql": "^2.16.0"
   }
 }

@@ -21,5 +21,11 @@ module.exports = {
             res.write('success')
             res.end()
         })
-    }
+    },
+    readImageFile: function(file, res) {
+        var data = fs.readFile(file, 'binary', function(err, data) {
+            res.write(data, 'binary')
+            res.end()
+        })
+    },
 }

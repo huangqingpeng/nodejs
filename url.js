@@ -9,9 +9,9 @@ var http = require("http");
 var router = require("./view/router.js")
 let files = require("./view/files.js");
 http.createServer(function(request, response) {
-    response.writeHead(200, {
-        'Content-type': 'text/html;charset=utf-8'
-    })
+    // response.writeHead(200, {
+    //     'Content-type': 'text/html;charset=utf-8'
+    // })
     if (request.url !== "/favicon.ico") {
         console.log(request.url)
         var path = request.url.replace(/\//, "")
