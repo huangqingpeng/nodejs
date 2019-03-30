@@ -14,12 +14,18 @@ http.createServer(function(request, response) {
     // })
     if (request.url !== "/favicon.ico") {
         console.log(request.url)
-        var path = request.url.replace(/\//, "")
-        router[path](response)
-            // console.log(request.url)
-            // router.home(response)
-            //写入内容
-            //files.writeFile('./files/test.txt', response)
+        var path = request.url.split("?")[0].replace(/\//, "")
+        try {
+            router[path](response, request)
+        } catch (error) {
+            //报错回到首页
+            router['home'](response, request)
+        }
+
+        // console.log(request.url)
+        // router.home(response)
+        //写入内容
+        //files.writeFile('./files/test.txt', response)
 
         //结束，把数据送给前端
         //response.end()
