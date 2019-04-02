@@ -19,5 +19,8 @@
   "devDependencies": {
     "async": "^2.6.2",
     "mysql": "^2.16.0"
+  },
+  "dependencies": {
+    "supervisor": "^0.12.0"
   }
 }
